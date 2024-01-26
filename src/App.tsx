@@ -2,18 +2,16 @@ import './App.css'
 import Portfolio from './components/Portfolio'
 import Sidebar from './components/Sidebar'
 
-function App() {
+export default function App() {
 
   return (
-    <div className="w-screen h-screen flex flex-row justify-between">
-      <div className="h-screen w-1/6 bg-zinc-900">
+    <div className="w-screen h-screen flex flex-row">
+      <div className="w-96 h-full max-h-screen overflow-y-auto bg-zinc-950">
         <Sidebar />
       </div>
-      <div className="h-screen w-full bg-zinc-600">
+      <div className="w-full max-h-screen overflow-y-auto">
         <Portfolio />
       </div>
     </div>
   )
 }
-
-export default App

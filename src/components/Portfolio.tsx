@@ -1,5 +1,11 @@
+import About from "./Portfolio/About";
+import Hero from "./Portfolio/Hero";
+
 export default function Portfolio() {
     return (
-        <p>portfolio component</p>
+        <div className="bg-hero bg-fixed bg-cover h-screen">
+            <Hero />
+            <About />
+        </div>
     )
 }
