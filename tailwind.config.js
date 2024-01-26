@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'ubuntu': ['ubuntu', 'sans-serif']
+      },
       backgroundImage: {
         'hero': "url('hero.jpg')"
       }

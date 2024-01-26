@@ -1,6 +1,6 @@
 export default function About() {
     return (
-        <div className="">
+        <div className="bg-zinc-200">
             <p>about me component</p>
         </div>
     )

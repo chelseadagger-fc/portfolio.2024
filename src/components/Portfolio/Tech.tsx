@@ -1,6 +1,6 @@
 export default function Tech() {
     return (
-        <div>
+        <div className="bg-zinc-200">
             <p>tech component</p>
         </div>
     )

@@ -1,6 +1,6 @@
 export default function Contact() {
     return (
-        <div>
+        <div className="bg-zinc-200">
             <p>contact me component</p>
         </div>
     )

@@ -1,6 +1,6 @@
 export default function Projects() {
     return (
-        <div>
+        <div className="bg-zinc-200">
             <p>projects component</p>
         </div>
     )

@@ -9,7 +9,7 @@ export default function App() {
       <div className="w-96 h-full max-h-screen overflow-y-auto bg-zinc-950">
         <Sidebar />
       </div>
-      <div className="w-full max-h-screen overflow-y-auto">
+      <div className="w-full max-h-screen overflow-y-auto no-scrollbar">
         <Portfolio />
       </div>
     </div>
