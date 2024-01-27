@@ -8,12 +8,12 @@ export default function Tech() {
     // const mouseOverColor = "#0047AB";
     // const mouseAwayColor = "black";
 
-    function mouseOverColor(e) {
-        e.target.style.color = "#0047AB";
+    function mouseOverColor(e: React.MouseEvent) {
+        (e.target as HTMLInputElement).style.color = "#0047AB";
     }
 
-    function mouseLeaveColor(e) {
-        e.target.style.color = "#000000";
+    function mouseLeaveColor(e: React.MouseEvent) {
+        (e.target as HTMLInputElement).style.color = "#000000";
     }
 
     return (
