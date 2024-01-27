@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'ubuntu': ['ubuntu', 'sans-serif']
+        'ubuntu': ['ubuntu', 'sans-serif'],
+        'tajawal': ['tajawal', 'sans-serif']
       },
       backgroundImage: {
         'hero': "url('hero.jpg')"

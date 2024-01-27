@@ -6,7 +6,7 @@ export default function App() {
 
   return (
     <div className="w-screen h-screen flex flex-row">
-      <div className="w-96 h-full max-h-screen overflow-y-auto bg-zinc-950">
+      <div className="w-96 h-full max-h-screen overflow-y-auto bg-zinc-950"> {/* border-r-2? */}
         <Sidebar />
       </div>
       <div className="w-full max-h-screen overflow-y-auto no-scrollbar">

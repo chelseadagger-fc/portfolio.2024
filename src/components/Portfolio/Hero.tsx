@@ -1,11 +1,11 @@
-import css from './Hero.module.css'
 import { useEffect, useState } from 'react';
 // @ts-expect-error: type not declared by module owner
 import Typist from 'react-typist-component';
+import cssTypist from './Hero.module.css'
 
 export default function Hero() {
     const setClass = (classes: string[]) => {
-        return classes.map((className) => css[className]).join(" ");
+        return classes.map((className) => cssTypist[className]).join(" ");
     };
 
     const [count, setCount] = useState(1);
@@ -28,7 +28,7 @@ export default function Hero() {
                     {wordScroll.map((word) => [
                         <>
                             <p className={setClass(["highlight", "blinking-cursor"])}>{word}</p>
-                            <Typist.Delay ms={5800} />
+                            <Typist.Delay ms={4800} />
                             <Typist.Backspace count={word.length} />
                         </>
                     ])}
