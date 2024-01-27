@@ -1,14 +1,16 @@
 import { FaDiscord, FaLinkedinIn } from "react-icons/fa6";
-import { BsTwitterX } from "react-icons/bs";
+import { BsTwitterX, BsWindowStack } from "react-icons/bs";
 import { PiGithubLogoFill } from "react-icons/pi";
-import { FaHome, FaListUl } from "react-icons/fa";
+import { FaListUl } from "react-icons/fa";
+import { TfiEmail, TfiIdBadge } from "react-icons/tfi";
+import { GrBriefcase, GrHomeRounded } from "react-icons/gr";
 
 
 export default function Sidebar() {
     const smallIcon = "1rem";
 
     return (
-        <div className="h-full flex flex-col justify-between items-center pt-8 ">
+        <div className="h-full flex flex-col justify-between items-center pt-8">
             <div className="flex flex-col items-center">
                 <img
                     className="rounded-full h-5/12 w-5/12 border-solid border-4"
@@ -34,12 +36,13 @@ export default function Sidebar() {
                             size={smallIcon} />
                     </div>
                 </div>
-                <div className="flex flex-col justify-between pt-8">
+                <div className="flex flex-col justify-between pt-16 text-xl gap-8">
                     <div className="flex flex-row items-center gap-4 w-36">
-                        <FaHome />
+                        <GrHomeRounded />
                         <p>Home</p>
                     </div>
                     <div className="flex flex-row items-center gap-4 w-36">
+                        <TfiIdBadge />
                         <p>About</p>
                     </div>
                     <div className="flex flex-row items-center gap-4 w-36">
@@ -47,14 +50,23 @@ export default function Sidebar() {
                         <p>Skills</p>
                     </div>
                     <div className="flex flex-row items-center gap-4 w-36">
+                        <BsWindowStack />
                         <p>Projects</p>
                     </div>
                     <div className="flex flex-row items-center gap-4 w-36">
+                        <GrBriefcase />
+                        <p>Freelancing</p>
+                    </div>
+                    <div className="flex flex-row items-center gap-4 w-36">
+                        <TfiEmail />
                         <p>Contact</p>
                     </div>
                 </div>
             </div>
-            <div>
+            <div className="w-full">
+                <div className="flex flex-row justify-center">
+                    <p>BLOG</p>
+                </div>
                 <p className="pb-1 text-xs">© 2024 Daniel Aldridge</p>
             </div>
         </div>

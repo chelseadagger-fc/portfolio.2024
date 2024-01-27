@@ -1,13 +1,13 @@
-export default function Projects() {
+export default function Freelancing() {
     return (
-        <div className="bg-zinc-300 h-[48rem] text-3xl text-black py-12 border-solid border-black flex items-center justify-center">
+        <div className="bg-zinc-200 h-[48rem] text-3xl text-black py-12 border-solid border-black flex items-center justify-center">
             <div className="w-3/4">
                 <div className="flex flex-col items-start mb-8">
-                    <p className="text-5xl font-tajawal mb-4">Projects</p>
+                    <p className="text-5xl font-tajawal mb-4">Freelance work</p>
                     <hr className="section-divider" />
                 </div>
                 <div className="h-64 flex flex-row items-center justify-center">
-                    portfolio here
+                    pricing and stuff
                 </div>
 
             </div>

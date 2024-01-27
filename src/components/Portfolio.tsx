@@ -1,5 +1,6 @@
 import About from "./Portfolio/About";
 import Contact from "./Portfolio/Contact";
+import Freelancing from "./Portfolio/Freelancing";
 import Hero from "./Portfolio/Hero";
 import Projects from "./Portfolio/Projects";
 import Tech from "./Portfolio/Tech";
@@ -11,6 +12,7 @@ export default function Portfolio() {
             <About />
             <Tech />
             <Projects />
+            <Freelancing />
             <Contact />
         </div>
     )

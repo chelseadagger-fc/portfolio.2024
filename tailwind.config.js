@@ -8,10 +8,11 @@ export default {
     extend: {
       fontFamily: {
         'ubuntu': ['ubuntu', 'sans-serif'],
-        'tajawal': ['tajawal', 'sans-serif']
+        'tajawal': ['tajawal', 'sans-serif'],
+        'assistant': ['assistant', 'sans-serif']
       },
       backgroundImage: {
-        'hero': "url('hero.jpg')"
+        'hero': "url('/hero.jpg')"
       }
     },
   },
