@@ -1,17 +1,17 @@
-import { useRef } from "react";
 import { BsTwitterX, BsWindowStack } from "react-icons/bs";
 import { FaDiscord, FaLinkedinIn, FaListUl } from "react-icons/fa6";
 import { GrHomeRounded, GrBriefcase } from "react-icons/gr";
 import { PiGithubLogoFill } from "react-icons/pi";
 import { TfiIdBadge, TfiEmail } from "react-icons/tfi";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
-    const navHome = useRef<HTMLInputElement>(null);
-    const navAbout = useRef<HTMLInputElement>(null);
-    const navTech = useRef<HTMLInputElement>(null);
-    const navProjects = useRef<HTMLInputElement>(null);
-    const navFreelancing = useRef<HTMLInputElement>(null);
-    const navContact = useRef<HTMLInputElement>(null);
+    // const navHome = useRef<HTMLInputElement>(null);
+    // const navAbout = useRef<HTMLInputElement>(null);
+    // const navTech = useRef<HTMLInputElement>(null);
+    // const navProjects = useRef<HTMLInputElement>(null);
+    // const navFreelancing = useRef<HTMLInputElement>(null);
+    // const navContact = useRef<HTMLInputElement>(null);
 
     const smallIcon = "1rem";
 
@@ -40,42 +40,42 @@ export default function Navbar() {
                         </div>
                 </div>
                 <nav className="flex flex-col justify-between pt-16 text-xl gap-8">
-                      <li><a onClick={() => navHome.current!.scrollIntoView({behavior: 'smooth'})} key={'home-key'} >
+                      <li><Link to="/#home">
                           <div className="flex flex-row items-center gap-4 w-36 select-none">
                               <GrHomeRounded />
                               <p>Home</p>
                           </div>
-                      </a></li>
-                      <li><a onClick={() => navAbout.current!.scrollIntoView({behavior: 'smooth'})} key={'about-key'} >
+                      </Link></li>
+                      <li><Link to="/#about">
                           <div className="flex flex-row items-center gap-4 w-36 select-none">
                               <TfiIdBadge />
                               <p>About</p>
                           </div>
-                      </a></li>
-                      <li><a onClick={() => navTech.current!.scrollIntoView({behavior: 'smooth'})} key={'skill-key'} >
+                      </Link></li>
+                      <li><Link to="/#tech">
                           <div className="flex flex-row items-center gap-4 w-36 select-none">
                               <FaListUl />
                               <p>Skills</p>
                           </div>
-                      </a></li>
-                      <li><a onClick={() => navProjects.current!.scrollIntoView({behavior: 'smooth'})} key={'projects-key'} >
+                        </Link></li>
+                      <li><Link to="/#projects">
                           <div className="flex flex-row items-center gap-4 w-36 select-none">
                               <BsWindowStack />
                               <p>Projects</p>
                           </div>
-                      </a></li>
-                      <li><a onClick={() => navFreelancing.current!.scrollIntoView({behavior: 'smooth'})} key={'freelancing-key'} >
+                      </Link></li>
+                      <li><Link to="/#freelancing">
                           <div className="flex flex-row items-center gap-4 w-36 select-none">
                               <GrBriefcase />
                               <p>Freelancing</p>
                           </div>
-                      </a></li>
-                      <li><a onClick={() => navContact.current!.scrollIntoView({behavior: 'smooth'})} key={'contact-key'} >
+                      </Link></li>
+                      <li><Link to="/#contact">
                           <div className="flex flex-row items-center gap-4 w-36 select-none">
                               <TfiEmail />
                               <p>Contact</p>
                           </div>
-                      </a></li>
+                      </Link></li>
                 </nav>
             </div>
             <div className="w-full">
