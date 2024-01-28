@@ -3,3 +3,8 @@
   padding: 0;
   text-align: center;
 }
+
+.is-active {
+  color: yellow;
+  background-color: yellow;
+}
