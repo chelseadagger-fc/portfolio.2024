@@ -22,7 +22,7 @@ export default function Hero() {
 
     return (
         <div className="h-full flex flex-col justify-center content-center">
-            <div className="pt-12 pr-96 pl-48 mr-72 h-24 flex flex-col items-start font-ubuntu">
+            <div className="pt-12 pr-96 pl-48 mr-72 h-24 flex flex-col items-start font-ubuntu select-none">
                 <p className="text-7xl font-bold">Daniel Aldridge</p>
                 {count ? (<Typist onTypingDone={() => setCount(0)}>
                     {wordScroll.map((word) => [
