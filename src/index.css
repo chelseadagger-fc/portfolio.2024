@@ -40,6 +40,10 @@ a:hover {
   color: #535bf2;
 } */
 
+html {
+  scroll-padding-left: 24rem;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -83,20 +87,6 @@ button:focus-visible {
   width: 120px;
 }
 
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
-
-.is-active {
-  color: yellow;
-  background-color: yellow;
+.active-scroll-spy {
+  color: cyan;
 }
