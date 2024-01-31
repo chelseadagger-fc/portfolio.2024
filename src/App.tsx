@@ -1,10 +1,9 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Navbar from './components/Navbar'
 import Portfolio from './components/Portfolio'
 // @ts-expect-error: type not declared by module owner
-import ScrollToHashElement from "./components/utility/ScrollToHashElement";
-
+import ScrollToHashElement from "./components/utility/ScrollToHashElement"
 
 export default function App() {
 

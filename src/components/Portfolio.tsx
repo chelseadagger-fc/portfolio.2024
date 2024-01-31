@@ -13,7 +13,7 @@ export default function Portfolio() {
 
     return (
         <div className="w-full h-screen overflow-y-auto no-scrollbar bg-hero bg-fixed bg-cover" ref={parentScrollContainerRef}>
-                <ScrollSpy parentScrollContainerRef={parentScrollContainerRef} scrollThrottle={300} useBoxMethod={true} offsetBottom={100} onUpdateCallback={(id) => console.log(id)}> {/*  offsetTop={10} */}
+                <ScrollSpy parentScrollContainerRef={parentScrollContainerRef} scrollThrottle={100} useBoxMethod={false} offsetBottom={50} onUpdateCallback={(id) => console.log(id)}> {/*  offsetTop={10} */}
                     <section id="home">
                         <Hero />
                     </section>
