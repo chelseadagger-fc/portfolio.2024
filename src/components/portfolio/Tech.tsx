@@ -3,8 +3,8 @@ import { SiJavascript, SiTypescript, SiNextdotjs, SiReact, SiNodedotjs, SiHtml5,
 
 export default function Tech() {
 
-    const bigIcon = "6.5rem";
-    const smallIcon = "5rem";
+    const bigIcon = "8rem";
+    const smallIcon = "6.5rem";
     // const mouseOverColor = "#0047AB";
     // const mouseAwayColor = "black";
 
@@ -17,14 +17,19 @@ export default function Tech() {
     }
 
     return (
-        <div className="bg-zinc-200 h-[48rem] text-3xl text-black py-12 border-solid border-black flex items-center justify-center">
-            <div className="w-3/4 ">
-                <div className="flex flex-col items-start mb-8">
+        <div className="bg-zinc-200 h-screen text-3xl text-black py-12 border-solid border-black flex items-center justify-center">
+            <div className="w-3/4 h-fit flex flex-col justify-center">
+                <div className="h-fit flex flex-col items-start mb-12">
                     <h1 className="text-5xl font-tajawal mb-4">Skills and technology</h1>
-                    <hr className="section-divider" />
+                    <hr className="section-divider mb-4" />
                 </div>
-                <div className="h-64 flex flex-col items-center justify-center">
-                    <div className="flex flex-row text-xl gap-14">
+                <div className="flex flex-col items-center justify-center">
+                    <div>
+                        <p className="text-2xl mb-12">As a self-taught developer, I wanted to begin with industry-wide technologies used commonly 
+                        in the web development landscape. This is why I started with the MERN tech stack, but I'm always exploring new technologies 
+                        to add to my experience and versatility as web developer.</p>
+                    </div>
+                    <div className="flex flex-row text-lg gap-14 mb-24 pt-8">
                         <div className={css.tech}>
                             <SiTypescript
                                 size={bigIcon}
@@ -79,14 +84,14 @@ export default function Tech() {
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-center text-xl gap-28">
+                <div className="flex justify-center text-lg gap-28">
                     <div className={css.tech}>
                         <SiHtml5
                             size={smallIcon}
                             onMouseOver={mouseOverColor}
                             onMouseOut={mouseLeaveColor}
                         />
-                        <p>HTML 5</p>
+                        <p>HTML</p>
                     </div>
                     <div className={css.tech}>
                         <SiJavascript
@@ -102,7 +107,7 @@ export default function Tech() {
                             onMouseOver={mouseOverColor}
                             onMouseOut={mouseLeaveColor}
                         /> 
-                        <p>CSS 3</p>
+                        <p>CSS</p>
                     </div>
                 </div>
 
