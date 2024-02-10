@@ -9,7 +9,8 @@ export default {
       fontFamily: {
         'ubuntu': ['ubuntu', 'sans-serif'],
         'tajawal': ['tajawal', 'sans-serif'],
-        'assistant': ['assistant', 'sans-serif']
+        'assistant': ['assistant', 'sans-serif'],
+        'caveat': ['Caveat', 'serif;']
       },
       backgroundImage: {
         'hero': "url('/hero.jpg')"

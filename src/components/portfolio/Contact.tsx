@@ -6,12 +6,12 @@ export default function Contact() {
                     <h1 className="text-5xl font-tajawal mb-4">Contact me</h1>
                     <hr className="section-divider mb-4" />
                 </div>
-                <div className="h-64 flex flex-row items-center justify-center">
-                    contact info
+                <div className="h-64 flex flex-col items-start ml-12">
+                    <h2 className="text-4xl mt-8 mb-20">Let's get in touch!</h2>
+                    <p className="text-4xl mb-6">Contact me at </p>
+                    <span className="italic font-caveat text-6xl ml-6">hello@daniel-aldridge.dev</span>
                 </div>
-
             </div>
-
         </div>
     )
 }
