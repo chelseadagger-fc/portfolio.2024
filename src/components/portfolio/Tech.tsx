@@ -1,14 +1,13 @@
 import css from './Tech.module.css'
-import { SiNextdotjs, SiReact, SiNodedotjs, SiHtml5, SiCss3, SiExpress, SiMongodb, SiPostgresql, SiFirebase } from 'react-icons/si'
+import { SiNextdotjs, SiReact, SiNodedotjs, SiHtml5, SiCss3, SiExpress, SiMongodb, SiPostgresql, SiFirebase, SiVitest, SiPostman, SiTailwindcss, SiBootstrap } from 'react-icons/si'
+import { FaGitAlt } from "react-icons/fa6";
 import { BiLogoTypescript } from "react-icons/bi";
 import { RiJavascriptFill } from "react-icons/ri";
 
 export default function Tech() {
 
-    const bigIcon = "8rem";
-    const smallIcon = "6rem";
-    // const mouseOverColor = "#0047AB";
-    // const mouseAwayColor = "black";
+    const bigIcon = "7rem";
+    const smallIcon = "5rem";
 
     function mouseOverColor(e: React.MouseEvent) {
         (e.target as HTMLInputElement).style.color = "#0047AB";
@@ -31,7 +30,7 @@ export default function Tech() {
                         in the web development landscape. This is why I started with the MERN tech stack, but I'm always exploring new technologies 
                         to add to my experience and versatility as web developer.</p>
                     </div>
-                    <div className="flex flex-row text-lg gap-14 mb-24 pt-8">
+                    <div className="flex flex-row text-lg gap-20 mb-12 pt-8">
                         <div className={css.tech}>
                             <SiReact
                                 size={bigIcon}
@@ -54,14 +53,6 @@ export default function Tech() {
                             <p className="pt-6">MongoDB</p>
                         </div>
                         <div className={css.tech}>
-                            <SiPostgresql
-                                size={bigIcon}
-                                onMouseOver={mouseOverColor}
-                                onMouseOut={mouseLeaveColor}
-                        />
-                            <p className="pt-6">PostgreSQL</p>
-                        </div>
-                        <div className={css.tech}>
                             <SiFirebase 
                                 size={bigIcon}
                                 onMouseOver={mouseOverColor}
@@ -70,12 +61,30 @@ export default function Tech() {
                             <p className="pt-6">Firebase</p>
                         </div>
                         <div className={css.tech}>
+                            <SiPostgresql
+                                size={bigIcon}
+                                onMouseOver={mouseOverColor}
+                                onMouseOut={mouseLeaveColor}
+                        />
+                            <p className="pt-6">PostgreSQL</p>
+                        </div>
+
+                        <div className={css.tech}>
                             <SiExpress
                                 size={bigIcon}
                                 onMouseOver={mouseOverColor}
                                 onMouseOut={mouseLeaveColor}
                         />
                             <p className="pt-6">Express.js</p>
+                        </div>
+                    </div>
+                    <div className="flex flex-row text-lg gap-20 mb-12">
+                    <div className={css.tech}>
+                            <SiVitest 
+                                size={bigIcon}
+                                onMouseOver={mouseOverColor}
+                                onMouseOut={mouseLeaveColor} />  
+                            <p className="pt-6">Vite</p>
                         </div>
                         <div className={css.tech}>
                             <SiNextdotjs
@@ -85,9 +94,42 @@ export default function Tech() {
                         />
                             <p className="pt-6">Next.js</p>
                         </div>
+                        <div className={css.tech}>
+                            <FaGitAlt
+                                size={bigIcon}
+                                onMouseOver={mouseOverColor}
+                                onMouseOut={mouseLeaveColor} />
+                            <p className="pt-6">Git</p>
+                        </div>
+                        <div className={css.tech}>
+                            <SiPostman 
+                                size={bigIcon}
+                                onMouseOver={mouseOverColor}
+                                onMouseOut={mouseLeaveColor}
+                        />
+                            <p className="pt-6">Postman</p>
+                        </div>
+                        <div className={css.tech}>
+                            <SiBootstrap  
+                                size={bigIcon}
+                                onMouseOver={mouseOverColor}
+                                onMouseOut={mouseLeaveColor}
+                        />
+                            <p className="pt-6">Bootstrap</p>
+                        </div>
+                        <div className={css.tech}>
+                            <SiTailwindcss 
+                                size={bigIcon}
+                                onMouseOver={mouseOverColor}
+                                onMouseOut={mouseLeaveColor}
+                        />
+                            <p className="pt-6">Tailwind CSS</p>
+                        </div>
                     </div>
                 </div>
-                <div className="flex justify-center text-lg gap-28">
+
+                
+                <div className="flex justify-center text-lg gap-28 mb-20">
                     <div className={css.tech}>
                         <SiHtml5
                             size={smallIcon}

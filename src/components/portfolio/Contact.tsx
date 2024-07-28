@@ -13,7 +13,7 @@ export default function Contact() {
                     <h2 className="text-4xl mt-8 mb-20">Let's get in touch!</h2>
                     <p className="text-4xl mb-6">Contact me at </p>
                     <a
-                        className="italic font-caveat text-6xl ml-6 email"
+                        className="italic font-caveat text-6xl ml-6 tracking-wider email"
                         onClick={() =>  navigator.clipboard.writeText('hello@daniel-aldridge.dev')}
                         data-tooltip-id="email-copied"
                         data-tooltip-place="bottom-end"
